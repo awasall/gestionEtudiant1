@@ -91,7 +91,7 @@ $count=10;
 $nbpage=ceil($ne/$count);
     $req=$connexion->query("SELECT * FROM Etudiant LIMIT ".(($page-1)*$count).",$count");
     for($i=1;$i<=$nbpage;$i++){
-      echo "<a href=\"modifsup.php?p=$i\">$i</a>" ;
+      echo "<a href=\"modifsu.php?p=$i\">$i</a>" ;
    }   
     return $req;
   }
